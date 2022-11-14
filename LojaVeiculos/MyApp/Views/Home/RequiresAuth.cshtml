@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Autenticação de Usuário";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Esta página é acesso por <b>usuários autenticados</b>.</p>
+
+<form asp-area="" asp-controller="Account" asp-action="Logout" method="post">
+    <a href="/" class="btn btn-link">&lt; Home</a> |
+    <button type="submit" class="btn btn-link">Sign Out</button>
+</form>
